@@ -1,0 +1,13 @@
+{
+  "itemGroup.revamped": "Example Mod Tab",
+  "block.revamped.example_block": "Example Block",
+  "item.revamped.example_item": "Example Item",
+
+  "revamped.configuration.title": "Revamped Configs",
+  "revamped.configuration.section.revamped.common.toml": "Revamped Configs",
+  "revamped.configuration.section.revamped.common.toml.title": "Revamped Configs",
+  "revamped.configuration.items": "Item List",
+  "revamped.configuration.logDirtBlock": "Log Dirt Block",
+  "revamped.configuration.magicNumberIntroduction": "Magic Number Text",
+  "revamped.configuration.magicNumber": "Magic Number"
+}
