@@ -22,4 +22,5 @@ https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
 Additional Resources: 
 ==========
 Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+NeoForged Discord: https://discord.neoforged.net/  
+This mod is licensed under CC BY-NC-SA 4.0.
