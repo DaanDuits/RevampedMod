@@ -1,7 +1,7 @@
 {
-  "itemGroup.revamped": "Example Mod Tab",
-  "block.revamped.example_block": "Example Block",
-  "item.revamped.example_item": "Example Item",
+  "itemGroup.revamped": "Revamped",
+  "block.revamped.chopping_block": "Chopping Block",
+  "container.revamped.chopping_block": "Chopping Block",
 
   "revamped.configuration.title": "Revamped Configs",
   "revamped.configuration.section.revamped.common.toml": "Revamped Configs",

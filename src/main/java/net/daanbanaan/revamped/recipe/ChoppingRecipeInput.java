@@ -1,0 +1,20 @@
+package net.daanbanaan.revamped.recipe;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeInput;
+
+public record ChoppingRecipeInput(ItemStack input) implements RecipeInput{
+
+	@Override
+	public ItemStack getItem(int index) {
+		// TODO Auto-generated method stub
+		return input;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 1;
+	}
+	
+}
