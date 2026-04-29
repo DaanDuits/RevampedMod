@@ -1,6 +1,16 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#revamped:iron_tier_axes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_log": {
       "conditions": {
         "items": [
@@ -21,7 +31,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_log"
+      "has_log",
+      "has_axe"
     ]
   ],
   "rewards": {

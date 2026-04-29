@@ -17,14 +17,12 @@ public class RevampedRecipes {
 		    SERIALIZERS.register("chopping", () -> new ChoppingRecipe.Serializer<>(ChoppingRecipe::new));
 	public static final DeferredHolder<RecipeType<?>, RecipeType<ChoppingRecipe>> CHOPPING_TYPE = TYPES.register("chopping", () -> new RecipeType<ChoppingRecipe>() {
 		@Override
-		public String toString()
-		{
+		public String toString() {
 			return "chopping";
 		}
 	});
 	
-	public static void register(IEventBus eventBus)
-	{
+	public static void register(IEventBus eventBus) {
 		SERIALIZERS.register(eventBus);
 		TYPES.register(eventBus);
 	}

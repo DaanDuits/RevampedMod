@@ -2,12 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "A": {
+      "tag": "revamped:iron_tier_axes"
+    },
     "L": {
       "tag": "minecraft:logs"
     }
   },
   "pattern": [
-    "LL"
+    " A ",
+    "LLL"
   ],
   "result": {
     "count": 1,

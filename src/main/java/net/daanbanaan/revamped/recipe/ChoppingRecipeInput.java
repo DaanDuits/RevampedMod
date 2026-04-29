@@ -7,13 +7,11 @@ public record ChoppingRecipeInput(ItemStack input) implements RecipeInput{
 
 	@Override
 	public ItemStack getItem(int index) {
-		// TODO Auto-generated method stub
 		return input;
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
 		return 1;
 	}
 	
