@@ -1,26 +1,17 @@
+![Minecraft Revamped](https://cdn.modrinth.com/data/cached_images/12e5c4266152027af66c6e41fa7fc07dcd3307b7.png)
 
-Installation information
-=======
+**Revamped adds a new vanilla feel twist to your minecraft experience.**
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Features
+This mod currently only adds the Chopping Block a new functional block to make crafting wood blocks easier and less expensive.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Status: Alpha
+[!IMPORTANT]
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+This mod is currently in Alpha. Bugs are expected, and some features may change before the final 1.0.0 release. Always back up your worlds before updating!
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/  
-This mod is licensed under CC BY-NC-SA 4.0.
+## License & Permissions
+This project is licensed under CC BY-NC-SA 4.0.
+* Can I use this in a modpack? Yes! As long as the pack is non-commercial.
+* Can I fork the code? Yes, you are encouraged to view and modify the source code on GitHub.
+* Redistribution: Please do not re-upload the compiled .jar to other websites. Official downloads are only hosted on Modrinth and GitHub.
