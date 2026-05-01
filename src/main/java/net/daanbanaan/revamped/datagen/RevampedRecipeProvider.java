@@ -191,6 +191,16 @@ public class RevampedRecipeProvider extends RecipeProvider implements ICondition
 		chopping(RecipeCategory.REDSTONE, Ingredient.of(Items.BAMBOO_PLANKS), Items.BAMBOO_FENCE_GATE, 2)
 		.unlockedBy("has_log", has(Items.BAMBOO_PLANKS))
 		.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "bamboo_fence_gates_from_bamboo_planks_chopping"));
+		
+		chopping(RecipeCategory.BUILDING_BLOCKS, Ingredient.of(Items.BAMBOO_PLANKS), Items.BAMBOO_MOSAIC, 1)
+		.unlockedBy("has_log", has(Items.BAMBOO_PLANKS))
+		.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "bamboo_mosaic_from_bamboo_planks_chopping"));
+		chopping(RecipeCategory.BUILDING_BLOCKS, Ingredient.of(Items.BAMBOO_PLANKS), Items.BAMBOO_MOSAIC_STAIRS, 1)
+		.unlockedBy("has_log", has(Items.BAMBOO_PLANKS))
+		.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "bamboo_mosaic_stairs_from_bamboo_planks_chopping"));
+		chopping(RecipeCategory.BUILDING_BLOCKS, Ingredient.of(Items.BAMBOO_PLANKS), Items.BAMBOO_MOSAIC_SLAB, 2)
+		.unlockedBy("has_log", has(Items.BAMBOO_PLANKS))
+		.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "bamboo_mosaic_slabs_from_bamboo_planks_chopping"));
 	}
 	
 	private record WoodTypeInfo(
