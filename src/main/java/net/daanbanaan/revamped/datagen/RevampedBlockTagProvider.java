@@ -6,6 +6,7 @@ import org.jetbrains.annotations.Nullable;
 
 import net.daanbanaan.revamped.Revamped;
 import net.daanbanaan.revamped.block.RevampedBlocks;
+import net.daanbanaan.revamped.tags.RevampedBlockTags;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -21,7 +22,10 @@ public class RevampedBlockTagProvider extends BlockTagsProvider {
 
 	@Override
 	protected void addTags(Provider provider) {
-		tag(BlockTags.MINEABLE_WITH_AXE).add(RevampedBlocks.CHOPPING_BLOCK.get());
+		tag(RevampedBlockTags.WOODEN_MOSAIC).add(RevampedBlocks.OAK_MOSAIC.get());
+		
+		tag(BlockTags.MINEABLE_WITH_AXE).add(RevampedBlocks.CHOPPING_BLOCK.get())
+		.addTag(RevampedBlockTags.WOODEN_MOSAIC);
 	}
 
 }

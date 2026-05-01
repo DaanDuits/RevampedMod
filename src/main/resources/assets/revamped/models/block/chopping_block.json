@@ -1,8 +1,8 @@
 {
 	"render_type": "cutout",
-	"parent": "block/block",
+	"parent": "minecraft:block/block",
 	"textures": {
-		"3": "item/iron_axe",
+		"3": "minecraft:item/iron_axe",
 		"bottom": "revamped:block/chopping_block_bottom",
 		"top": "revamped:block/chopping_block_top",
 		"particle": "revamped:block/chopping_block_side",

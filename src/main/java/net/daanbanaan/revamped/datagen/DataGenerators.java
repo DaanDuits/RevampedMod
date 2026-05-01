@@ -33,5 +33,8 @@ public class DataGenerators {
 				List.of(new LootTableProvider.SubProviderEntry(RevampedBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 		
 		generator.addProvider(event.includeServer(), new RevampedRecipeProvider(packOutput, lookupProvider));
+		
+		generator.addProvider(event.includeClient(), new RevampedItemModelProvider(packOutput, existingFileHelper));
+		generator.addProvider(event.includeClient(), new RevampedBlockStateProvider(packOutput, existingFileHelper));
 	}
 }

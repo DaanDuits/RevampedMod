@@ -3,6 +3,26 @@
   "block.revamped.chopping_block": "Chopping Block",
   "container.revamped.chopping_block": "Chopping Block",
 
+  "block.revamped.oak_mosaic": "Oak Mosaic",
+  
+  "block.revamped.birch_mosaic": "Birch Mosaic",
+
+  "block.revamped.spruce_mosaic": "Spruce Mosaic",
+
+  "block.revamped.jungle_mosaic": "Jungle Mosaic",
+
+  "block.revamped.acacia_mosaic": "Acacia Mosaic",
+
+  "block.revamped.dark_oak_mosaic": "Dark Oak Mosaic",
+
+  "block.revamped.mangrove_mosaic": "Mangrove Mosaic",
+
+  "block.revamped.cherry_mosaic": "Cherry Mosaic",
+
+  "block.revamped.crimson_mosaic": "Crimson Mosaic",
+
+  "block.revamped.warped_mosaic": "Warped Mosaic",
+
   "revamped.configuration.title": "Revamped Configs",
   "revamped.configuration.section.revamped.common.toml": "Revamped Configs",
   "revamped.configuration.section.revamped.common.toml.title": "Revamped Configs",

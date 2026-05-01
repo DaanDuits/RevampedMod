@@ -12,7 +12,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -42,7 +44,47 @@ public class Revamped {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> new ItemStack(RevampedBlocks.CHOPPING_BLOCK.get()))
             .displayItems((parameters, output) -> {
-                output.accept(RevampedBlocks.CHOPPING_BLOCK.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(RevampedBlocks.CHOPPING_BLOCK.get());
+                
+                output.accept(RevampedBlocks.OAK_MOSAIC.get());
+                output.accept(RevampedBlocks.OAK_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.OAK_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.BIRCH_MOSAIC.get());
+                output.accept(RevampedBlocks.BIRCH_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.BIRCH_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.SPRUCE_MOSAIC.get());
+                output.accept(RevampedBlocks.SPRUCE_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.SPRUCE_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.JUNGLE_MOSAIC.get());
+                output.accept(RevampedBlocks.JUNGLE_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.JUNGLE_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.ACACIA_MOSAIC.get());
+                output.accept(RevampedBlocks.ACACIA_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.ACACIA_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.DARK_OAK_MOSAIC.get());
+                output.accept(RevampedBlocks.DARK_OAK_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.DARK_OAK_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.MANGROVE_MOSAIC.get());
+                output.accept(RevampedBlocks.MANGROVE_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.MANGROVE_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.CHERRY_MOSAIC.get());
+                output.accept(RevampedBlocks.CHERRY_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.CHERRY_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.CRIMSON_MOSAIC.get());
+                output.accept(RevampedBlocks.CRIMSON_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.CRIMSON_MOSAIC_SLAB.get());
+                
+                output.accept(RevampedBlocks.WARPED_MOSAIC.get());
+                output.accept(RevampedBlocks.WARPED_MOSAIC_STAIRS.get());
+                output.accept(RevampedBlocks.WARPED_MOSAIC_SLAB.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -82,9 +124,62 @@ public class Revamped {
         if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             ItemStack stonecutter = new ItemStack(Items.STONECUTTER);
             ItemStack choppingBlock = new ItemStack(RevampedBlocks.CHOPPING_BLOCK.get());
-
             event.insertAfter(stonecutter, choppingBlock, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            insertBlockSetCreative(event, Items.OAK_PLANKS, RevampedBlocks.OAK_MOSAIC.get(),
+            		Items.OAK_STAIRS, RevampedBlocks.OAK_MOSAIC_STAIRS.get(),
+            		Items.OAK_SLAB, RevampedBlocks.OAK_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.BIRCH_PLANKS, RevampedBlocks.BIRCH_MOSAIC.get(),
+            		Items.BIRCH_STAIRS, RevampedBlocks.BIRCH_MOSAIC_STAIRS.get(),
+            		Items.BIRCH_SLAB, RevampedBlocks.BIRCH_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.SPRUCE_PLANKS, RevampedBlocks.SPRUCE_MOSAIC.get(),
+            		Items.SPRUCE_STAIRS, RevampedBlocks.SPRUCE_MOSAIC_STAIRS.get(),
+            		Items.SPRUCE_SLAB, RevampedBlocks.SPRUCE_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.JUNGLE_PLANKS, RevampedBlocks.JUNGLE_MOSAIC.get(),
+            		Items.JUNGLE_STAIRS, RevampedBlocks.JUNGLE_MOSAIC_STAIRS.get(),
+            		Items.JUNGLE_SLAB, RevampedBlocks.JUNGLE_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.ACACIA_PLANKS, RevampedBlocks.ACACIA_MOSAIC.get(),
+            		Items.ACACIA_STAIRS, RevampedBlocks.ACACIA_MOSAIC_STAIRS.get(),
+            		Items.ACACIA_SLAB, RevampedBlocks.ACACIA_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.DARK_OAK_PLANKS, RevampedBlocks.DARK_OAK_MOSAIC.get(),
+            		Items.DARK_OAK_STAIRS, RevampedBlocks.DARK_OAK_MOSAIC_STAIRS.get(),
+            		Items.DARK_OAK_SLAB, RevampedBlocks.DARK_OAK_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.MANGROVE_PLANKS, RevampedBlocks.MANGROVE_MOSAIC.get(),
+            		Items.MANGROVE_STAIRS, RevampedBlocks.MANGROVE_MOSAIC_STAIRS.get(),
+            		Items.MANGROVE_SLAB, RevampedBlocks.MANGROVE_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.CHERRY_PLANKS, RevampedBlocks.CHERRY_MOSAIC.get(),
+            		Items.CHERRY_STAIRS, RevampedBlocks.CHERRY_MOSAIC_STAIRS.get(),
+            		Items.CHERRY_SLAB, RevampedBlocks.CHERRY_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.CRIMSON_PLANKS, RevampedBlocks.CRIMSON_MOSAIC.get(),
+            		Items.CRIMSON_STAIRS, RevampedBlocks.CRIMSON_MOSAIC_STAIRS.get(),
+            		Items.CRIMSON_SLAB, RevampedBlocks.CRIMSON_MOSAIC_SLAB.get());
+            
+            insertBlockSetCreative(event, Items.WARPED_PLANKS, RevampedBlocks.WARPED_MOSAIC.get(),
+            		Items.WARPED_STAIRS, RevampedBlocks.WARPED_MOSAIC_STAIRS.get(),
+            		Items.WARPED_SLAB, RevampedBlocks.WARPED_MOSAIC_SLAB.get());
+        }
+    }
+    
+    private void insertCreative(BuildCreativeModeTabContentsEvent event, ItemLike existingEntry, ItemLike newEntry) {
+    	ItemStack existingStack = new ItemStack(existingEntry);
+        ItemStack newStack = new ItemStack(newEntry);
+        event.insertAfter(existingStack, newStack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+    }
+    private void insertBlockSetCreative(BuildCreativeModeTabContentsEvent event, ItemLike existingBlockEntry, ItemLike newBlockEntry, 
+    							ItemLike existingStairsEntry, ItemLike newStairsEntry,
+    							ItemLike existingSlabEntry, ItemLike newSlabEntry) {
+    	insertCreative(event, existingBlockEntry, newBlockEntry);
+    	insertCreative(event, existingStairsEntry, newStairsEntry);
+    	insertCreative(event, existingSlabEntry, newSlabEntry);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
