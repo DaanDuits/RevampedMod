@@ -51,11 +51,11 @@ public class RevampedItemTagProvider extends ItemTagsProvider {
 		tag(RevampedItemTags.NATURAL_CHERRY_LOGS)
 		.add(Items.CHERRY_LOG,
 			Items.CHERRY_WOOD);
-		
-		tag(RevampedItemTags.NATURAL_WARPED_STEMS)
-		.add(Items.CRIMSON_STEM,
-			Items.CRIMSON_HYPHAE);
+
 		tag(RevampedItemTags.NATURAL_CRIMSON_STEMS)
+		.add(Items.CRIMSON_STEM,
+				Items.CRIMSON_HYPHAE);
+		tag(RevampedItemTags.NATURAL_WARPED_STEMS)
 		.add(Items.WARPED_STEM,
 			Items.WARPED_HYPHAE);
 		
@@ -84,13 +84,13 @@ public class RevampedItemTagProvider extends ItemTagsProvider {
 		tag(RevampedItemTags.STRIPPED_CHERRY_LOGS)
 		.add(Items.STRIPPED_CHERRY_LOG,
 			Items.STRIPPED_CHERRY_WOOD);
-		
-		tag(RevampedItemTags.STRIPPED_WARPED_STEMS)
-		.add(Items.STRIPPED_CRIMSON_STEM,
-			Items.STRIPPED_CRIMSON_HYPHAE);
+
 		tag(RevampedItemTags.STRIPPED_CRIMSON_STEMS)
+		.add(Items.STRIPPED_CRIMSON_STEM,
+				Items.STRIPPED_CRIMSON_HYPHAE);
+		tag(RevampedItemTags.STRIPPED_WARPED_STEMS)
 		.add(Items.STRIPPED_WARPED_STEM,
-			Items.STRIPPED_WARPED_HYPHAE);
+				Items.STRIPPED_WARPED_HYPHAE);
 	}
 
 }

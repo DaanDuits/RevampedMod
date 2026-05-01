@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "minecraft:warped_planks"
+  },
+  "result": {
+    "count": 4,
+    "id": "minecraft:warped_fence"
+  }
+}
