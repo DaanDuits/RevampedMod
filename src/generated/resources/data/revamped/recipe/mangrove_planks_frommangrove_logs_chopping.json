@@ -1,7 +1,7 @@
 {
   "type": "revamped:chopping",
   "ingredient": {
-    "item": "minecraft:mangrove_log"
+    "tag": "minecraft:mangrove_logs"
   },
   "result": {
     "count": 6,

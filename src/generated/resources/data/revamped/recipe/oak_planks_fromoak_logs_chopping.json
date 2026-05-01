@@ -1,7 +1,7 @@
 {
   "type": "revamped:chopping",
   "ingredient": {
-    "item": "minecraft:oak_log"
+    "tag": "minecraft:oak_logs"
   },
   "result": {
     "count": 6,

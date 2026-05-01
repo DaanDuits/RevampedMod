@@ -1,7 +1,7 @@
 {
   "type": "revamped:chopping",
   "ingredient": {
-    "item": "minecraft:cherry_log"
+    "tag": "minecraft:cherry_logs"
   },
   "result": {
     "count": 6,

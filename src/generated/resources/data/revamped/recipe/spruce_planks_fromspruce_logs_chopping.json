@@ -1,7 +1,7 @@
 {
   "type": "revamped:chopping",
   "ingredient": {
-    "item": "minecraft:spruce_log"
+    "tag": "minecraft:spruce_logs"
   },
   "result": {
     "count": 6,

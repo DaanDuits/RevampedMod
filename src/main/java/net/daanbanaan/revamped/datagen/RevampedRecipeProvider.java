@@ -95,7 +95,7 @@ public class RevampedRecipeProvider extends RecipeProvider implements ICondition
 	}
 	
 	private void generateWoodChoppingRecipes(RecipeOutput recipeOutput, WoodTypeInfo woodType, String logName, String woodBlockName) {
-		chopping(RecipeCategory.BUILDING_BLOCKS, Ingredient.of(woodType.log), woodType.planks, 6)
+		chopping(RecipeCategory.BUILDING_BLOCKS, Ingredient.of(woodType.logsTag), woodType.planks, 6)
 		.unlockedBy("has_log", has(woodType.logsTag))
 		.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, woodType.name + "_planks_from" + woodType.name + "_" + logName + "s_chopping"));
 		chopping(RecipeCategory.BUILDING_BLOCKS, Ingredient.of(woodType.logsTag), woodType.slab, 8)
