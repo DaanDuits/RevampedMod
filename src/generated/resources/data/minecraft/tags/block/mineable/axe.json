@@ -1,6 +1,8 @@
 {
   "values": [
     "revamped:chopping_block",
-    "#revamped:wooden_mosaic"
+    "#revamped:wooden_mosaic",
+    "#revamped:wooden_mosaic_stairs",
+    "#revamped:wooden_mosaic_slabs"
   ]
 }

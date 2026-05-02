@@ -20,12 +20,47 @@ public class RevampedBlockTagProvider extends BlockTagsProvider {
 		super(output, lookupProvider, Revamped.MOD_ID, existingFileHelper);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	protected void addTags(Provider provider) {
-		tag(RevampedBlockTags.WOODEN_MOSAIC).add(RevampedBlocks.OAK_MOSAIC.get());
+		tag(RevampedBlockTags.WOODEN_MOSAIC)
+		.add(RevampedBlocks.OAK_MOSAIC.get(), 
+			RevampedBlocks.BIRCH_MOSAIC.get(),
+			RevampedBlocks.SPRUCE_MOSAIC.get(),
+			RevampedBlocks.JUNGLE_MOSAIC.get(),
+			RevampedBlocks.ACACIA_MOSAIC.get(),
+			RevampedBlocks.DARK_OAK_MOSAIC.get(),
+			RevampedBlocks.MANGROVE_MOSAIC.get(),
+			RevampedBlocks.CHERRY_MOSAIC.get(),
+			RevampedBlocks.CRIMSON_MOSAIC.get(),
+			RevampedBlocks.WARPED_MOSAIC.get());
+		
+		tag(RevampedBlockTags.WOODEN_MOSAIC_STAIRS)
+		.add(RevampedBlocks.OAK_MOSAIC_STAIRS.get(), 
+			RevampedBlocks.BIRCH_MOSAIC_STAIRS.get(),
+			RevampedBlocks.SPRUCE_MOSAIC_STAIRS.get(),
+			RevampedBlocks.JUNGLE_MOSAIC_STAIRS.get(),
+			RevampedBlocks.ACACIA_MOSAIC_STAIRS.get(),
+			RevampedBlocks.DARK_OAK_MOSAIC_STAIRS.get(),
+			RevampedBlocks.MANGROVE_MOSAIC_STAIRS.get(),
+			RevampedBlocks.CHERRY_MOSAIC_STAIRS.get(),
+			RevampedBlocks.CRIMSON_MOSAIC_STAIRS.get(),
+			RevampedBlocks.WARPED_MOSAIC_STAIRS.get());
+		
+		tag(RevampedBlockTags.WOODEN_MOSAIC_SLABS)
+		.add(RevampedBlocks.OAK_MOSAIC_SLAB.get(), 
+			RevampedBlocks.BIRCH_MOSAIC_SLAB.get(),
+			RevampedBlocks.SPRUCE_MOSAIC_SLAB.get(),
+			RevampedBlocks.JUNGLE_MOSAIC_SLAB.get(),
+			RevampedBlocks.ACACIA_MOSAIC_SLAB.get(),
+			RevampedBlocks.DARK_OAK_MOSAIC_SLAB.get(),
+			RevampedBlocks.MANGROVE_MOSAIC_SLAB.get(),
+			RevampedBlocks.CHERRY_MOSAIC_SLAB.get(),
+			RevampedBlocks.CRIMSON_MOSAIC_SLAB.get(),
+			RevampedBlocks.WARPED_MOSAIC_SLAB.get());
 		
 		tag(BlockTags.MINEABLE_WITH_AXE).add(RevampedBlocks.CHOPPING_BLOCK.get())
-		.addTag(RevampedBlockTags.WOODEN_MOSAIC);
+		.addTags(RevampedBlockTags.WOODEN_MOSAIC, RevampedBlockTags.WOODEN_MOSAIC_STAIRS, RevampedBlockTags.WOODEN_MOSAIC_SLABS);
 	}
 
 }
