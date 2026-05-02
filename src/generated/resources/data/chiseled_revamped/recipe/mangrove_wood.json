@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "revamped:mangrove_mosaic"
+    },
+    "W": {
+      "tag": "revamped:stripped_mangrove_logs"
+    }
+  },
+  "pattern": [
+    "WM",
+    "MW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "revamped:chiseled_mangrove_wood"
+  }
+}

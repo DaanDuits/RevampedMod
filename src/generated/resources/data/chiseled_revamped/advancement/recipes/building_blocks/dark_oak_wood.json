@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "revamped:dark_oak_mosaic"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#revamped:stripped_dark_oak_logs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chiseled_revamped:dark_oak_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_block",
+      "has_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chiseled_revamped:dark_oak_wood"
+    ]
+  }
+}

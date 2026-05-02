@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "revamped:cherry_mosaic"
+    },
+    "W": {
+      "tag": "revamped:stripped_cherry_logs"
+    }
+  },
+  "pattern": [
+    "WM",
+    "MW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "revamped:chiseled_cherry_wood"
+  }
+}

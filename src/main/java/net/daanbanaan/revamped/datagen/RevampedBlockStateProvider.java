@@ -18,24 +18,36 @@ public class RevampedBlockStateProvider extends BlockStateProvider {
 
 	@Override
 	protected void registerStatesAndModels() {
+		blockWithItem(RevampedBlocks.CHISELED_OAK_WOOD);
 		blockSet(RevampedBlocks.OAK_MOSAIC, RevampedBlocks.OAK_MOSAIC_STAIRS, RevampedBlocks.OAK_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_BIRCH_WOOD);
 		blockSet(RevampedBlocks.BIRCH_MOSAIC, RevampedBlocks.BIRCH_MOSAIC_STAIRS, RevampedBlocks.BIRCH_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_SPRUCE_WOOD);
 		blockSet(RevampedBlocks.SPRUCE_MOSAIC, RevampedBlocks.SPRUCE_MOSAIC_STAIRS, RevampedBlocks.SPRUCE_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_JUNGLE_WOOD);
 		blockSet(RevampedBlocks.JUNGLE_MOSAIC, RevampedBlocks.JUNGLE_MOSAIC_STAIRS, RevampedBlocks.JUNGLE_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_ACACIA_WOOD);
 		blockSet(RevampedBlocks.ACACIA_MOSAIC, RevampedBlocks.ACACIA_MOSAIC_STAIRS, RevampedBlocks.ACACIA_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_DARK_OAK_WOOD);
 		blockSet(RevampedBlocks.DARK_OAK_MOSAIC, RevampedBlocks.DARK_OAK_MOSAIC_STAIRS, RevampedBlocks.DARK_OAK_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_MANGROVE_WOOD);
 		blockSet(RevampedBlocks.MANGROVE_MOSAIC, RevampedBlocks.MANGROVE_MOSAIC_STAIRS, RevampedBlocks.MANGROVE_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_CHERRY_WOOD);
 		blockSet(RevampedBlocks.CHERRY_MOSAIC, RevampedBlocks.CHERRY_MOSAIC_STAIRS, RevampedBlocks.CHERRY_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_BAMBOO_BLOCK);
+		
+		blockWithItem(RevampedBlocks.CHISELED_CRIMSON_HYPHAE);
 		blockSet(RevampedBlocks.CRIMSON_MOSAIC, RevampedBlocks.CRIMSON_MOSAIC_STAIRS, RevampedBlocks.CRIMSON_MOSAIC_SLAB);
 		
+		blockWithItem(RevampedBlocks.CHISELED_WARPED_HYPHAE);
 		blockSet(RevampedBlocks.WARPED_MOSAIC, RevampedBlocks.WARPED_MOSAIC_STAIRS, RevampedBlocks.WARPED_MOSAIC_SLAB);
 	}
 	

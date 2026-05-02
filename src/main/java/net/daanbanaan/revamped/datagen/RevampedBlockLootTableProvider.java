@@ -18,43 +18,55 @@ public class RevampedBlockLootTableProvider extends BlockLootSubProvider {
 	@Override
 	protected void generate() {
 		dropSelf(RevampedBlocks.CHOPPING_BLOCK.get());
-		
+
+		dropSelf(RevampedBlocks.CHISELED_OAK_WOOD.get());
 		dropSelf(RevampedBlocks.OAK_MOSAIC.get());
 		dropSelf(RevampedBlocks.OAK_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.OAK_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_BIRCH_WOOD.get());
 		dropSelf(RevampedBlocks.BIRCH_MOSAIC.get());
 		dropSelf(RevampedBlocks.BIRCH_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.BIRCH_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_SPRUCE_WOOD.get());
 		dropSelf(RevampedBlocks.SPRUCE_MOSAIC.get());
 		dropSelf(RevampedBlocks.SPRUCE_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.SPRUCE_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_JUNGLE_WOOD.get());
 		dropSelf(RevampedBlocks.JUNGLE_MOSAIC.get());
 		dropSelf(RevampedBlocks.JUNGLE_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.JUNGLE_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_ACACIA_WOOD.get());
 		dropSelf(RevampedBlocks.ACACIA_MOSAIC.get());
 		dropSelf(RevampedBlocks.ACACIA_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.ACACIA_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_DARK_OAK_WOOD.get());
 		dropSelf(RevampedBlocks.DARK_OAK_MOSAIC.get());
 		dropSelf(RevampedBlocks.DARK_OAK_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.DARK_OAK_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_MANGROVE_WOOD.get());
 		dropSelf(RevampedBlocks.MANGROVE_MOSAIC.get());
 		dropSelf(RevampedBlocks.MANGROVE_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.MANGROVE_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_CHERRY_WOOD.get());
 		dropSelf(RevampedBlocks.CHERRY_MOSAIC.get());
 		dropSelf(RevampedBlocks.CHERRY_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.CHERRY_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_BAMBOO_BLOCK.get());
+		
+		dropSelf(RevampedBlocks.CHISELED_CRIMSON_HYPHAE.get());
 		dropSelf(RevampedBlocks.CRIMSON_MOSAIC.get());
 		dropSelf(RevampedBlocks.CRIMSON_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.CRIMSON_MOSAIC_SLAB.get());
 		
+		dropSelf(RevampedBlocks.CHISELED_WARPED_HYPHAE.get());
 		dropSelf(RevampedBlocks.WARPED_MOSAIC.get());
 		dropSelf(RevampedBlocks.WARPED_MOSAIC_STAIRS.get());
 		dropSelf(RevampedBlocks.WARPED_MOSAIC_SLAB.get());
