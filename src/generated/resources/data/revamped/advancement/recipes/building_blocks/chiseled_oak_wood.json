@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "revamped:birch_mosaic"
+            "items": "revamped:oak_mosaic"
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#revamped:stripped_birch_logs"
+            "items": "#revamped:stripped_oak_logs"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chiseled_revamped:birch_wood"
+        "recipe": "revamped:chiseled_oak_wood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "chiseled_revamped:birch_wood"
+      "revamped:chiseled_oak_wood"
     ]
   }
 }

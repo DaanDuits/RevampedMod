@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "revamped:crimson_mosaic"
+            "items": "revamped:warped_mosaic"
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#revamped:stripped_crimson_stems"
+            "items": "#revamped:stripped_warped_stems"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chiseled_revamped:crimson_hyphae"
+        "recipe": "revamped:chiseled_warped_hyphae"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "chiseled_revamped:crimson_hyphae"
+      "revamped:chiseled_warped_hyphae"
     ]
   }
 }

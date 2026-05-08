@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "revamped:spruce_mosaic"
+            "items": "revamped:crimson_mosaic"
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#revamped:stripped_spruce_logs"
+            "items": "#revamped:stripped_crimson_stems"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chiseled_revamped:spruce_wood"
+        "recipe": "revamped:chiseled_crimson_hyphae"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "chiseled_revamped:spruce_wood"
+      "revamped:chiseled_crimson_hyphae"
     ]
   }
 }

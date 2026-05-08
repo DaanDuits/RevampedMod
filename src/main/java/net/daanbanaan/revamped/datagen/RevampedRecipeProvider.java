@@ -318,7 +318,7 @@ public class RevampedRecipeProvider extends RecipeProvider implements ICondition
 		.define('M', woodType.mosaic)
 		.unlockedBy("has_block", has(woodType.mosaic))
 		.unlockedBy("has_log", has(woodType.strippedLogsTag))
-		.save(recipeOutput, ResourceLocation.fromNamespaceAndPath("chiseled_" + Revamped.MOD_ID, woodType.name + "_" + woodBlockName));
+		.save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "chiseled_" + woodType.name + "_" + woodBlockName));
 	}
 	
 	private record WoodTypeInfo(
