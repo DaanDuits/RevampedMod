@@ -13,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class RevampedPois {
 	public static final DeferredRegister<PoiType> POI_TYPES = DeferredRegister.create(BuiltInRegistries.POINT_OF_INTEREST_TYPE, Revamped.MOD_ID);
 	
-	public static final Holder<PoiType> LUMBERJACK_POI = POI_TYPES.register("lumberjack_poi", 
+	public static final Holder<PoiType> LUMBERJACK_POI = POI_TYPES.register("lumberjack", 
 			() -> new PoiType(ImmutableSet.copyOf(RevampedBlocks.CHOPPING_BLOCK.get().getStateDefinition().getPossibleStates()), 1, 1));
 	
 	public static void register(IEventBus eventBus) {
