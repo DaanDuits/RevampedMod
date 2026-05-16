@@ -2,11 +2,11 @@ package net.daanbanaan.revamped.event;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import com.mojang.datafixers.util.Pair;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.daanbanaan.revamped.Revamped;
 import net.daanbanaan.revamped.mixin.StructureTemplatePoolAccessor;
 import net.daanbanaan.revamped.tags.RevampedBlockTags;
@@ -19,7 +19,6 @@ import net.minecraft.data.worldgen.ProcessorLists;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.entity.npc.VillagerTrades;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement;
 import net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement;
@@ -76,13 +75,14 @@ public class RevampedEvents {
 			    .lookupOrThrow(Registries.PROCESSOR_LIST)
 			    .getOrThrow(ProcessorLists.MOSSIFY_10_PERCENT);
 		
-		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_1", processorHolder).apply(Projection.RIGID), 1);
+		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_1", processorHolder).apply(Projection.RIGID), 2);
+		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_2", processorHolder).apply(Projection.RIGID), 2);
 	}
 	
 	private static void addToTemplatePool(StructureTemplatePool pool, StructurePoolElement newPiece, int weight) {
 		if (pool == null) return;
 		StructureTemplatePoolAccessor poolAccess = (StructureTemplatePoolAccessor)pool;
-		List<StructurePoolElement> oldPieces = poolAccess.getTemplates();
+		ObjectArrayList<StructurePoolElement> oldPieces = poolAccess.getTemplates();
 		
 		for (int i = 0; i < weight; i++) {
 			oldPieces.add(newPiece);
@@ -90,5 +90,6 @@ public class RevampedEvents {
 		
 		List<Pair<StructurePoolElement, Integer>> listOfPieceEntries = new ArrayList<>(poolAccess.getRawTemplates());
 		listOfPieceEntries.add(new Pair<>(newPiece, weight));
+		poolAccess.setRawTemplates(listOfPieceEntries);
 	}
 }

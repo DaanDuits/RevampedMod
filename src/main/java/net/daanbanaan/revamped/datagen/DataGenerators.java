@@ -9,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.data.loot.LootTableProvider.SubProviderEntry;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -31,7 +32,9 @@ public class DataGenerators {
 		generator.addProvider(event.includeServer(), new RevampedPoiTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
 		
 		generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), 
-				List.of(new LootTableProvider.SubProviderEntry(RevampedBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+				List.of(new LootTableProvider.SubProviderEntry(RevampedBlockLootTableProvider::new, LootContextParamSets.BLOCK),
+						new LootTableProvider.SubProviderEntry(RevampedChestLootTableProvider::new, LootContextParamSets.CHEST)), 
+				lookupProvider));
 		
 		generator.addProvider(event.includeServer(), new RevampedRecipeProvider(packOutput, lookupProvider));
 		
