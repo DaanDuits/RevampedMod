@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.client.model.VillagerModel;
 
 public class RevampedItemTags {
 	public static final TagKey<Item> IRON_TIER_AXES = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "iron_tier_axes"));

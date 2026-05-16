@@ -10,6 +10,7 @@ import net.daanbanaan.revamped.tags.RevampedBlockTags;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -58,6 +59,17 @@ public class RevampedBlockTagProvider extends BlockTagsProvider {
 			RevampedBlocks.CHERRY_MOSAIC_SLAB.get(),
 			RevampedBlocks.CRIMSON_MOSAIC_SLAB.get(),
 			RevampedBlocks.WARPED_MOSAIC_SLAB.get());
+		
+		tag(RevampedBlockTags.TRADEABLE_LOGS)
+		.add(Blocks.OAK_LOG,
+			Blocks.BIRCH_LOG,
+			Blocks.SPRUCE_LOG,
+			Blocks.JUNGLE_LOG,
+			Blocks.ACACIA_LOG,
+			Blocks.DARK_OAK_LOG,
+			Blocks.MANGROVE_LOG,
+			Blocks.CHERRY_LOG,
+			Blocks.BAMBOO_BLOCK);
 		
 		tag(BlockTags.MINEABLE_WITH_AXE).add(RevampedBlocks.CHOPPING_BLOCK.get())
 		.addTags(RevampedBlockTags.WOODEN_MOSAIC, RevampedBlockTags.WOODEN_MOSAIC_STAIRS, RevampedBlockTags.WOODEN_MOSAIC_SLABS);

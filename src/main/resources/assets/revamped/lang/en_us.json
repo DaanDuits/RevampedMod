@@ -45,7 +45,7 @@
 
   "block.revamped.chiseled_bamboo_block": "Chiseled Bamboo Block",
 
-  "block.revamped.chiseled_crinson_hyphae": "Chiseled Crimson Hyphae",
+  "block.revamped.chiseled_crimson_hyphae": "Chiseled Crimson Hyphae",
   "block.revamped.crimson_mosaic": "Crimson Mosaic",
   "block.revamped.crimson_mosaic_stairs": "Crimson Mosaic Stairs",
   "block.revamped.crimson_mosaic_slab": "Crimson Mosaic Slab",
@@ -54,6 +54,8 @@
   "block.revamped.warped_mosaic": "Warped Mosaic",
   "block.revamped.warped_mosaic_stairs": "Warped Mosaic Stairs",
   "block.revamped.warped_mosaic_slab": "Warped Mosaic Slab",
+  
+  "entity.minecraft.villager.revamped.lumberjack": "Lumberjack",
 
   "revamped.configuration.title": "Revamped Configs",
   "revamped.configuration.section.revamped.common.toml": "Revamped Configs",

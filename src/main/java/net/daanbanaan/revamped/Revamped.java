@@ -7,12 +7,13 @@ import com.mojang.logging.LogUtils;
 import net.daanbanaan.revamped.block.RevampedBlocks;
 import net.daanbanaan.revamped.item.RevampedItems;
 import net.daanbanaan.revamped.recipe.RevampedRecipes;
+import net.daanbanaan.revamped.villager.RevampedVillagers;
+import net.daanbanaan.revamped.villager.poi.RevampedPois;
 import net.daanbanaan.revamped.world.inventory.RevampedMenuTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.item.ItemStack;
@@ -113,6 +114,10 @@ public class Revamped {
         RevampedMenuTypes.register(modEventBus);
         
         RevampedRecipes.register(modEventBus);
+        
+        RevampedPois.register(modEventBus);
+        
+        RevampedVillagers.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 

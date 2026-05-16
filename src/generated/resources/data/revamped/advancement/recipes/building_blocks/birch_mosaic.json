@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:birch_stairs"
+            "items": "minecraft:birch_slab"
           }
         ]
       },

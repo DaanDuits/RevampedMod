@@ -16,27 +16,11 @@ import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = Revamped.MOD_ID, dist = Dist.CLIENT)
-// You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = Revamped.MOD_ID, value = Dist.CLIENT)
 public class RevampedClient {
     public RevampedClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
         // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
         // Do not forget to add translations for your config options to the en_us.json file.
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
-    }
-
-    @SubscribeEvent
-    static void onClientSetup(FMLClientSetupEvent event) {
-    }
-    
-    @EventBusSubscriber(modid = "revamped", value = Dist.CLIENT)
-    public class ClientModEvents {
-
-        @SubscribeEvent
-        public static void registerScreens(RegisterMenuScreensEvent event) {
-            // This links your MenuType to the vanilla Stonecutter GUI
-            event.register(RevampedMenuTypes.CHOPPING_BLOCK_MENU.get(), ChoppingBlockScreen::new);
-        }
     }
 }

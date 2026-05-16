@@ -28,6 +28,7 @@ public class DataGenerators {
 		BlockTagsProvider blockTagsProvider = new RevampedBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
 		generator.addProvider(event.includeServer(), blockTagsProvider);
 		generator.addProvider(event.includeServer(), new RevampedItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+		generator.addProvider(event.includeServer(), new RevampedPoiTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
 		
 		generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), 
 				List.of(new LootTableProvider.SubProviderEntry(RevampedBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
