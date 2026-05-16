@@ -1,6 +1,6 @@
 package net.daanbanaan.revamped;
 
-import net.daanbanaan.revamped.client.gui.inventory.ChoppingBlockScreen;
+import net.daanbanaan.revamped.client.gui.screen.inventory.ChoppingBlockScreen;
 import net.daanbanaan.revamped.world.inventory.RevampedMenuTypes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.inventory.StonecutterScreen;

@@ -1,6 +1,6 @@
 package net.daanbanaan.revamped.event;
 
-import net.daanbanaan.revamped.client.gui.inventory.ChoppingBlockScreen;
+import net.daanbanaan.revamped.client.gui.screen.inventory.ChoppingBlockScreen;
 import net.daanbanaan.revamped.world.inventory.RevampedMenuTypes;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;

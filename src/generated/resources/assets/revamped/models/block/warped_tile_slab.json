@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "revamped:block/warped_tiles",
+    "side": "revamped:block/warped_tiles",
+    "top": "revamped:block/warped_tiles"
+  }
+}
