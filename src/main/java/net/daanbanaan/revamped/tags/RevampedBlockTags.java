@@ -11,5 +11,9 @@ public class RevampedBlockTags {
 	public static final TagKey<Block> WOODEN_MOSAIC_STAIRS = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "wooden_mosaic_stairs"));
 	public static final TagKey<Block> WOODEN_MOSAIC_SLABS = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "wooden_mosaic_slabs"));
 	
+	public static final TagKey<Block> WOODEN_TILES = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "wooden_tiles"));
+	public static final TagKey<Block> WOODEN_TILE_STAIRS = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "wooden_tile_stairs"));
+	public static final TagKey<Block> WOODEN_TILE_SLABS = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "wooden_tile_slabs"));
+	
 	public static final TagKey<Block> TRADEABLE_LOGS = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "tradeable_logs"));
 }

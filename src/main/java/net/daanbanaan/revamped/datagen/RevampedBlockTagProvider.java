@@ -60,6 +60,45 @@ public class RevampedBlockTagProvider extends BlockTagsProvider {
 			RevampedBlocks.CRIMSON_MOSAIC_SLAB.get(),
 			RevampedBlocks.WARPED_MOSAIC_SLAB.get());
 		
+		tag(RevampedBlockTags.WOODEN_TILES)
+		.add(RevampedBlocks.OAK_TILES.get(), 
+			RevampedBlocks.BIRCH_TILES.get(),
+			RevampedBlocks.SPRUCE_TILES.get(),
+			RevampedBlocks.JUNGLE_TILES.get(),
+			RevampedBlocks.ACACIA_TILES.get(),
+			RevampedBlocks.DARK_OAK_TILES.get(),
+			RevampedBlocks.MANGROVE_TILES.get(),
+			RevampedBlocks.CHERRY_TILES.get(),
+			RevampedBlocks.BAMBOO_TILES.get(),
+			RevampedBlocks.CRIMSON_TILES.get(),
+			RevampedBlocks.WARPED_TILES.get());
+		
+		tag(RevampedBlockTags.WOODEN_TILE_STAIRS)
+		.add(RevampedBlocks.OAK_TILE_STAIRS.get(), 
+			RevampedBlocks.BIRCH_TILE_STAIRS.get(),
+			RevampedBlocks.SPRUCE_TILE_STAIRS.get(),
+			RevampedBlocks.JUNGLE_TILE_STAIRS.get(),
+			RevampedBlocks.ACACIA_TILE_STAIRS.get(),
+			RevampedBlocks.DARK_OAK_TILE_STAIRS.get(),
+			RevampedBlocks.MANGROVE_TILE_STAIRS.get(),
+			RevampedBlocks.CHERRY_TILE_STAIRS.get(),
+			RevampedBlocks.BAMBOO_TILE_STAIRS.get(),
+			RevampedBlocks.CRIMSON_TILE_STAIRS.get(),
+			RevampedBlocks.WARPED_TILE_STAIRS.get());
+		
+		tag(RevampedBlockTags.WOODEN_TILE_SLABS)
+		.add(RevampedBlocks.OAK_TILE_SLAB.get(), 
+			RevampedBlocks.BIRCH_TILE_SLAB.get(),
+			RevampedBlocks.SPRUCE_TILE_SLAB.get(),
+			RevampedBlocks.JUNGLE_TILE_SLAB.get(),
+			RevampedBlocks.ACACIA_TILE_SLAB.get(),
+			RevampedBlocks.DARK_OAK_TILE_SLAB.get(),
+			RevampedBlocks.MANGROVE_TILE_SLAB.get(),
+			RevampedBlocks.CHERRY_TILE_SLAB.get(),
+			RevampedBlocks.BAMBOO_TILE_SLAB.get(),
+			RevampedBlocks.CRIMSON_TILE_SLAB.get(),
+			RevampedBlocks.WARPED_TILE_SLAB.get());
+		
 		tag(RevampedBlockTags.TRADEABLE_LOGS)
 		.add(Blocks.OAK_LOG,
 			Blocks.BIRCH_LOG,
@@ -72,7 +111,8 @@ public class RevampedBlockTagProvider extends BlockTagsProvider {
 			Blocks.BAMBOO_BLOCK);
 		
 		tag(BlockTags.MINEABLE_WITH_AXE).add(RevampedBlocks.CHOPPING_BLOCK.get())
-		.addTags(RevampedBlockTags.WOODEN_MOSAIC, RevampedBlockTags.WOODEN_MOSAIC_STAIRS, RevampedBlockTags.WOODEN_MOSAIC_SLABS);
+		.addTags(RevampedBlockTags.WOODEN_MOSAIC, RevampedBlockTags.WOODEN_MOSAIC_STAIRS, RevampedBlockTags.WOODEN_MOSAIC_SLABS,
+				RevampedBlockTags.WOODEN_TILES, RevampedBlockTags.WOODEN_TILE_STAIRS, RevampedBlockTags.WOODEN_TILE_SLABS);
 	}
 
 }
