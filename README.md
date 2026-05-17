@@ -3,7 +3,16 @@
 **Revamped adds a new vanilla feel twist to your minecraft experience.**
 
 ## Features
-This mod currently only adds the Chopping Block a new functional block to make crafting wood blocks easier and less expensive.
+### Chopping Block
+The Chopping Block is a new functional block to make crafting wood blocks easier and less expensive.
+### Wooden Mosaic
+A new set of decorative blocks of every wood type that adds consistency between bamboo and wood.
+### Wooden Tiles
+A new set of decorative blocks of every wood type.
+### Chiseled Wood
+A decorative block of every wood type to add more variety to your wood palette.
+### Lumberjack
+A new villager type that trades different wood related blocks, and can even bulk strip logs for emeralds.
 
 ## Status: Alpha
 [!IMPORTANT]
