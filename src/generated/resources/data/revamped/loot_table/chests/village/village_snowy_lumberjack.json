@@ -17,7 +17,23 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "revamped:oak_mosaic",
+          "name": "revamped:chiseled_spruce_wood",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "revamped:spruce_mosaic",
           "weight": 5
         },
         {
@@ -33,7 +49,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:oak_planks",
+          "name": "minecraft:spruce_planks",
           "weight": 6
         },
         {
@@ -49,7 +65,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:oak_log",
+          "name": "minecraft:spruce_log",
           "weight": 5
         },
         {
@@ -65,7 +81,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:stripped_oak_log",
+          "name": "minecraft:stripped_spruce_log",
           "weight": 5
         },
         {
@@ -101,24 +117,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:oak_sapling",
+          "name": "minecraft:spruce_sapling",
           "weight": 6
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:birch_sapling",
-          "weight": 3
         }
       ],
       "rolls": {
@@ -128,5 +128,5 @@
       }
     }
   ],
-  "random_sequence": "revamped:chests/village/village_lumberjack"
+  "random_sequence": "revamped:chests/village/village_snowy_lumberjack"
 }

@@ -70,13 +70,21 @@ public class RevampedEvents {
 	}
 	
 	private static void addCustomVillagerHouses(Registry<StructureTemplatePool> templatePools, MinecraftServer server) {
-		StructureTemplatePool plainsPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/plains/houses"));
 		Holder<StructureProcessorList> processorHolder = server.registryAccess()
 			    .lookupOrThrow(Registries.PROCESSOR_LIST)
 			    .getOrThrow(ProcessorLists.MOSSIFY_10_PERCENT);
-		
+
+		StructureTemplatePool plainsPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/plains/houses"));
 		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_1", processorHolder).apply(Projection.RIGID), 2);
 		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_2", processorHolder).apply(Projection.RIGID), 2);
+
+		StructureTemplatePool taigaPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/taiga/houses"));
+		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack_lodge_1", processorHolder).apply(Projection.RIGID), 6);
+		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack_lodge_2", processorHolder).apply(Projection.RIGID), 5);
+		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack", processorHolder).apply(Projection.RIGID), 3);
+
+		StructureTemplatePool snowyPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/snowy/houses"));
+		addToTemplatePool(snowyPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/snowy/houses/snowy_lumberjack_lodge_1").apply(Projection.RIGID), 4);
 	}
 	
 	private static void addToTemplatePool(StructureTemplatePool pool, StructurePoolElement newPiece, int weight) {
