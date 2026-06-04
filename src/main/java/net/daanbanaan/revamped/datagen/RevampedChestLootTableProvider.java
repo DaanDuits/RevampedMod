@@ -81,6 +81,43 @@ public class RevampedChestLootTableProvider implements LootTableSubProvider {
 						.add(LootItem.lootTableItem(Items.SPRUCE_SAPLING).setWeight(6).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 8.0f))))
 						)
 					);
+		ResourceKey<LootTable> savannaVillage = ResourceKey.create(
+		        Registries.LOOT_TABLE, 
+		        ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "chests/village/village_savanna_lumberjack")
+		    );
+		output.accept(savannaVillage, LootTable.lootTable()
+				.setParamSet(LootContextParamSets.CHEST)
+				.withPool(LootPool.lootPool()
+						.setRolls(UniformGenerator.between(1.0f, 5.0f))
+						.add(LootItem.lootTableItem(RevampedBlocks.CHISELED_ACACIA_WOOD).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(RevampedBlocks.ACACIA_MOSAIC).setWeight(5).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(Items.ACACIA_PLANKS).setWeight(6).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 3.0f))))
+						.add(LootItem.lootTableItem(Items.ACACIA_LOG).setWeight(5).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 3.0f))))
+						.add(LootItem.lootTableItem(Items.STRIPPED_ACACIA_LOG).setWeight(5).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(Items.EMERALD).setWeight(1))
+						.add(LootItem.lootTableItem(Items.BREAD).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(Items.ACACIA_SAPLING).setWeight(6).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 8.0f))))
+						)
+					);
+		
+		ResourceKey<LootTable> desertVillage = ResourceKey.create(
+		        Registries.LOOT_TABLE, 
+		        ResourceLocation.fromNamespaceAndPath(Revamped.MOD_ID, "chests/village/village_desert_lumberjack")
+		    );
+		output.accept(desertVillage, LootTable.lootTable()
+				.setParamSet(LootContextParamSets.CHEST)
+				.withPool(LootPool.lootPool()
+						.setRolls(UniformGenerator.between(1.0f, 5.0f))
+						.add(LootItem.lootTableItem(RevampedBlocks.CHISELED_JUNGLE_WOOD).setWeight(3).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(RevampedBlocks.JUNGLE_MOSAIC).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(Items.JUNGLE_PLANKS).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 3.0f))))
+						.add(LootItem.lootTableItem(Items.JUNGLE_LOG).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 3.0f))))
+						.add(LootItem.lootTableItem(Items.STRIPPED_JUNGLE_LOG).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(Items.EMERALD).setWeight(2))
+						.add(LootItem.lootTableItem(Items.BREAD).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 4.0f))))
+						.add(LootItem.lootTableItem(Items.JUNGLE_SAPLING).setWeight(4).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 8.0f))))
+						)
+					);
 	}
 
 }

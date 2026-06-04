@@ -85,6 +85,12 @@ public class RevampedEvents {
 
 		StructureTemplatePool snowyPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/snowy/houses"));
 		addToTemplatePool(snowyPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/snowy/houses/snowy_lumberjack_lodge_1").apply(Projection.RIGID), 4);
+		
+		StructureTemplatePool savannaPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/savanna/houses"));
+		addToTemplatePool(savannaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/savanna/houses/savanna_lumberjack_lodge_1").apply(Projection.RIGID), 4);
+		
+		StructureTemplatePool desertPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/desert/houses"));
+		addToTemplatePool(desertPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/desert/houses/desert_lumberjack_lodge_1").apply(Projection.RIGID), 2);
 	}
 	
 	private static void addToTemplatePool(StructureTemplatePool pool, StructurePoolElement newPiece, int weight) {
