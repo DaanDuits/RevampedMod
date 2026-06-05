@@ -8,11 +8,13 @@ import com.mojang.datafixers.util.Pair;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.daanbanaan.revamped.Revamped;
+import net.daanbanaan.revamped.block.RevampedBlocks;
 import net.daanbanaan.revamped.mixin.StructureTemplatePoolAccessor;
 import net.daanbanaan.revamped.tags.RevampedBlockTags;
 import net.daanbanaan.revamped.villager.RevampedVillagerTrades;
 import net.daanbanaan.revamped.villager.RevampedVillagers;
 import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup.RegistryLookup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.ProcessorLists;
@@ -60,6 +62,19 @@ public class RevampedEvents {
 			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(Blocks.MANGROVE_PLANKS, 7, 2, 12, 2));
 			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(Blocks.CHERRY_PLANKS, 7, 2, 12, 2));
 			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(Blocks.BAMBOO_PLANKS, 7, 2, 12, 2));
+			
+			trades.get(4).add(new RevampedVillagerTrades.StripLogsForEmeralds(5, RevampedBlockTags.TRADEABLE_LOGS));
+			trades.get(3).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.OAK_MOSAIC, 16, 2, 12, 4));
+			trades.get(3).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.SPRUCE_MOSAIC, 16, 2, 12, 4));
+			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_OAK_WOOD.get(), 7, 2, 12, 2));
+			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_SPRUCE_WOOD.get(), 7, 2, 12, 2));
+			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.OAK_TILES.get(), 7, 2, 12, 2));
+			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.SPRUCE_TILES.get(), 7, 2, 12, 2));
+			
+			trades.get(5).add(new RevampedVillagerTrades.StripLogsForEmeralds(5, RevampedBlockTags.TRADEABLE_LOGS));
+			trades.get(3).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.MANGROVE_MOSAIC, 16, 2, 12, 4));
+			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_MANGROVE_WOOD.get(), 7, 2, 12, 2));
+			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.MANGROVE_TILES.get(), 7, 2, 12, 2));
 		}
 	}
 	
@@ -70,18 +85,22 @@ public class RevampedEvents {
 	}
 	
 	private static void addCustomVillagerHouses(Registry<StructureTemplatePool> templatePools, MinecraftServer server) {
-		Holder<StructureProcessorList> processorHolder = server.registryAccess()
-			    .lookupOrThrow(Registries.PROCESSOR_LIST)
-			    .getOrThrow(ProcessorLists.MOSSIFY_10_PERCENT);
+		RegistryLookup<StructureProcessorList> processorLookup = server.registryAccess().lookupOrThrow(Registries.PROCESSOR_LIST);
+		
+		Holder<StructureProcessorList> mossify10Percent = processorLookup.getOrThrow(ProcessorLists.MOSSIFY_10_PERCENT);
+		Holder<StructureProcessorList> zombieTaigaProcessor = processorLookup.getOrThrow(ProcessorLists.ZOMBIE_TAIGA);
 
 		StructureTemplatePool plainsPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/plains/houses"));
-		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_1", processorHolder).apply(Projection.RIGID), 2);
-		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_2", processorHolder).apply(Projection.RIGID), 2);
+		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_1", mossify10Percent).apply(Projection.RIGID), 2);
+		addToTemplatePool(plainsPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/plains/houses/plains_lumberjack_lodge_2", mossify10Percent).apply(Projection.RIGID), 2);
 
 		StructureTemplatePool taigaPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/taiga/houses"));
-		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack_lodge_1", processorHolder).apply(Projection.RIGID), 6);
-		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack_lodge_2", processorHolder).apply(Projection.RIGID), 5);
-		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack", processorHolder).apply(Projection.RIGID), 3);
+		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack_lodge_1", mossify10Percent).apply(Projection.RIGID), 6);
+		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack_lodge_2", mossify10Percent).apply(Projection.RIGID), 5);
+		addToTemplatePool(taigaPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/houses/taiga_lumberjack", mossify10Percent).apply(Projection.RIGID), 3);
+		
+		StructureTemplatePool taigaZombiePool = templatePools.get(ResourceLocation.withDefaultNamespace("village/taiga/zombie/houses"));
+		addToTemplatePool(taigaZombiePool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/taiga/zombie/houses/taiga_lumberjack_lodge_2", zombieTaigaProcessor).apply(Projection.RIGID), 3);
 
 		StructureTemplatePool snowyPool = templatePools.get(ResourceLocation.withDefaultNamespace("village/snowy/houses"));
 		addToTemplatePool(snowyPool, SinglePoolElement.legacy(Revamped.MOD_ID + ":village/snowy/houses/snowy_lumberjack_lodge_1").apply(Projection.RIGID), 4);
