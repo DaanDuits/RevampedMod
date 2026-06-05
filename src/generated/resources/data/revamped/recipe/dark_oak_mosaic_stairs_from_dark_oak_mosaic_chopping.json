@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "revamped:dark_oak_mosaic"
+  },
+  "result": {
+    "count": 1,
+    "id": "revamped:dark_oak_mosaic_stairs"
+  }
+}

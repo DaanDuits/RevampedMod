@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "revamped:dark_oak_tiles"
+    },
+    "W": {
+      "tag": "revamped:stripped_dark_oak_logs"
+    }
+  },
+  "pattern": [
+    "WM",
+    "MW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "revamped:chiseled_dark_oak_wood"
+  }
+}

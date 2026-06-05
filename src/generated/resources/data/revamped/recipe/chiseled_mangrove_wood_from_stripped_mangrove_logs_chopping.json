@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "tag": "revamped:stripped_mangrove_logs"
+  },
+  "result": {
+    "count": 1,
+    "id": "revamped:chiseled_mangrove_wood"
+  }
+}

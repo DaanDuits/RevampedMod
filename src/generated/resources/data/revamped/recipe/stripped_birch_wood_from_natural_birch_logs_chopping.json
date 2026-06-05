@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "tag": "revamped:natural_birch_logs"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:stripped_birch_wood"
+  }
+}

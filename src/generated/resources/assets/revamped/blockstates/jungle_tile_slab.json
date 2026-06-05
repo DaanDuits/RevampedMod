@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "revamped:block/jungle_tile_slab"
+    },
+    "type=double": {
+      "model": "revamped:block/jungle_tiles"
+    },
+    "type=top": {
+      "model": "revamped:block/jungle_tile_slab_top"
+    }
+  }
+}

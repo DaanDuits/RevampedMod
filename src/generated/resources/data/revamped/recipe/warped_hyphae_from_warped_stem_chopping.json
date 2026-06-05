@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "minecraft:warped_stem"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:warped_hyphae"
+  }
+}

@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.daanbanaan.revamped.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "StructureTemplatePoolAccessor"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

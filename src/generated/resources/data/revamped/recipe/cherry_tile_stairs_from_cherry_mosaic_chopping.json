@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "revamped:cherry_mosaic"
+  },
+  "result": {
+    "count": 1,
+    "id": "revamped:cherry_tile_stairs"
+  }
+}

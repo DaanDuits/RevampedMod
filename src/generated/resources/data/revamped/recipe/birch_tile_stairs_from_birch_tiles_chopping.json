@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "revamped:birch_tiles"
+  },
+  "result": {
+    "count": 1,
+    "id": "revamped:birch_tile_stairs"
+  }
+}

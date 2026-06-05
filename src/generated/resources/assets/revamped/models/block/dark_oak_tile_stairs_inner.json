@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "revamped:block/dark_oak_tiles",
+    "side": "revamped:block/dark_oak_tiles",
+    "top": "revamped:block/dark_oak_tiles"
+  }
+}

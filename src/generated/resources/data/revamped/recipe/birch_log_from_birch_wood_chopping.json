@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "minecraft:birch_wood"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:birch_log"
+  }
+}

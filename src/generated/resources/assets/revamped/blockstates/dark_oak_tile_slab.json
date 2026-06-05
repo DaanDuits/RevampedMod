@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "revamped:block/dark_oak_tile_slab"
+    },
+    "type=double": {
+      "model": "revamped:block/dark_oak_tiles"
+    },
+    "type=top": {
+      "model": "revamped:block/dark_oak_tile_slab_top"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "revamped:jungle_tiles"
+    },
+    "W": {
+      "tag": "revamped:stripped_jungle_logs"
+    }
+  },
+  "pattern": [
+    "WM",
+    "MW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "revamped:chiseled_jungle_wood"
+  }
+}

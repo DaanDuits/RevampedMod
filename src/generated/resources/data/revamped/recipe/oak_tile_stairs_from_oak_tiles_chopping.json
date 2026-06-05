@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "revamped:oak_tiles"
+  },
+  "result": {
+    "count": 1,
+    "id": "revamped:oak_tile_stairs"
+  }
+}

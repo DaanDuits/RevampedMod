@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "revamped:mangrove_tiles"
+  },
+  "result": {
+    "count": 2,
+    "id": "revamped:mangrove_tile_slab"
+  }
+}

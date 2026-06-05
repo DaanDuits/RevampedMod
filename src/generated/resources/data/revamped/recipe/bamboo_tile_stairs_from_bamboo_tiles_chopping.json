@@ -1,0 +1,10 @@
+{
+  "type": "revamped:chopping",
+  "ingredient": {
+    "item": "revamped:bamboo_tiles"
+  },
+  "result": {
+    "count": 1,
+    "id": "revamped:bamboo_tile_stairs"
+  }
+}

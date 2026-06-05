@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "revamped:bamboo_tiles"
+    },
+    "W": {
+      "item": "minecraft:stripped_bamboo_block"
+    }
+  },
+  "pattern": [
+    "WM",
+    "MW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "revamped:chiseled_bamboo_block"
+  }
+}
