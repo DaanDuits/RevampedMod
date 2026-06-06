@@ -64,17 +64,17 @@ public class RevampedEvents {
 			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(Blocks.BAMBOO_PLANKS, 7, 2, 12, 2));
 			
 			trades.get(4).add(new RevampedVillagerTrades.StripLogsForEmeralds(5, RevampedBlockTags.TRADEABLE_LOGS));
-			trades.get(3).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.OAK_MOSAIC, 16, 2, 12, 4));
-			trades.get(3).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.SPRUCE_MOSAIC, 16, 2, 12, 4));
-			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_OAK_WOOD.get(), 7, 2, 12, 2));
-			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_SPRUCE_WOOD.get(), 7, 2, 12, 2));
-			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.OAK_TILES.get(), 7, 2, 12, 2));
-			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.SPRUCE_TILES.get(), 7, 2, 12, 2));
+			trades.get(4).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.OAK_MOSAIC, 16, 2, 12, 4));
+			trades.get(4).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.SPRUCE_MOSAIC, 16, 2, 12, 4));
+			trades.get(4).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_OAK_WOOD.get(), 7, 2, 12, 2));
+			trades.get(4).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_SPRUCE_WOOD.get(), 7, 2, 12, 2));
+			trades.get(4).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.OAK_TILES.get(), 7, 2, 12, 2));
+			trades.get(4).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.SPRUCE_TILES.get(), 7, 2, 12, 2));
 			
 			trades.get(5).add(new RevampedVillagerTrades.StripLogsForEmeralds(5, RevampedBlockTags.TRADEABLE_LOGS));
-			trades.get(3).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.MANGROVE_MOSAIC, 16, 2, 12, 4));
-			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_MANGROVE_WOOD.get(), 7, 2, 12, 2));
-			trades.get(3).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.MANGROVE_TILES.get(), 7, 2, 12, 2));
+			trades.get(5).add(new VillagerTrades.EmeraldForItems(RevampedBlocks.MANGROVE_MOSAIC, 16, 2, 12, 4));
+			trades.get(5).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.CHISELED_MANGROVE_WOOD.get(), 7, 2, 12, 2));
+			trades.get(5).add(new VillagerTrades.ItemsForEmeralds(RevampedBlocks.MANGROVE_TILES.get(), 7, 2, 12, 2));
 		}
 	}
 	
