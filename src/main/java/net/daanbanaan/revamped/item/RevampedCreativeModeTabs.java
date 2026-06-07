@@ -21,6 +21,8 @@ public class RevampedCreativeModeTabs {
             .displayItems((parameters, output) -> {
                 output.accept(RevampedBlocks.CHOPPING_BLOCK.get());
 
+                output.accept(RevampedBlocks.HOLLOW_OAK_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_OAK_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_OAK_WOOD);
                 output.accept(RevampedBlocks.OAK_MOSAIC.get());
                 output.accept(RevampedBlocks.OAK_MOSAIC_STAIRS.get());
@@ -29,6 +31,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.OAK_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.OAK_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_BIRCH_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_BIRCH_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_BIRCH_WOOD);
                 output.accept(RevampedBlocks.BIRCH_MOSAIC.get());
                 output.accept(RevampedBlocks.BIRCH_MOSAIC_STAIRS.get());
@@ -37,6 +41,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.BIRCH_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.BIRCH_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_SPRUCE_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_SPRUCE_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_SPRUCE_WOOD);
                 output.accept(RevampedBlocks.SPRUCE_MOSAIC.get());
                 output.accept(RevampedBlocks.SPRUCE_MOSAIC_STAIRS.get());
@@ -45,6 +51,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.SPRUCE_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.SPRUCE_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_JUNGLE_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_JUNGLE_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_JUNGLE_WOOD);
                 output.accept(RevampedBlocks.JUNGLE_MOSAIC.get());
                 output.accept(RevampedBlocks.JUNGLE_MOSAIC_STAIRS.get());
@@ -53,6 +61,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.JUNGLE_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.JUNGLE_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_ACACIA_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_ACACIA_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_ACACIA_WOOD);
                 output.accept(RevampedBlocks.ACACIA_MOSAIC.get());
                 output.accept(RevampedBlocks.ACACIA_MOSAIC_STAIRS.get());
@@ -61,6 +71,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.ACACIA_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.ACACIA_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_DARK_OAK_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_DARK_OAK_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_DARK_OAK_WOOD);
                 output.accept(RevampedBlocks.DARK_OAK_MOSAIC.get());
                 output.accept(RevampedBlocks.DARK_OAK_MOSAIC_STAIRS.get());
@@ -69,6 +81,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.DARK_OAK_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.DARK_OAK_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_MANGROVE_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_MANGROVE_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_MANGROVE_WOOD);
                 output.accept(RevampedBlocks.MANGROVE_MOSAIC.get());
                 output.accept(RevampedBlocks.MANGROVE_MOSAIC_STAIRS.get());
@@ -77,6 +91,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.MANGROVE_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.MANGROVE_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_CHERRY_LOG.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_CHERRY_LOG.get());
                 output.accept(RevampedBlocks.CHISELED_CHERRY_WOOD);
                 output.accept(RevampedBlocks.CHERRY_MOSAIC.get());
                 output.accept(RevampedBlocks.CHERRY_MOSAIC_STAIRS.get());
@@ -84,12 +100,14 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.CHERRY_TILES.get());
                 output.accept(RevampedBlocks.CHERRY_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.CHERRY_TILE_SLAB.get());
-                
+
                 output.accept(RevampedBlocks.CHISELED_BAMBOO_BLOCK);
                 output.accept(RevampedBlocks.BAMBOO_TILES.get());
                 output.accept(RevampedBlocks.BAMBOO_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.BAMBOO_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_CRIMSON_STEM.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_CRIMSON_STEM.get());
                 output.accept(RevampedBlocks.CHISELED_CRIMSON_HYPHAE);
                 output.accept(RevampedBlocks.CRIMSON_MOSAIC.get());
                 output.accept(RevampedBlocks.CRIMSON_MOSAIC_STAIRS.get());
@@ -98,6 +116,8 @@ public class RevampedCreativeModeTabs {
                 output.accept(RevampedBlocks.CRIMSON_TILE_STAIRS.get());
                 output.accept(RevampedBlocks.CRIMSON_TILE_SLAB.get());
 
+                output.accept(RevampedBlocks.HOLLOW_WARPED_STEM.get());
+                output.accept(RevampedBlocks.STRIPPED_HOLLOW_WARPED_STEM.get());
                 output.accept(RevampedBlocks.CHISELED_WARPED_HYPHAE);
                 output.accept(RevampedBlocks.WARPED_MOSAIC.get());
                 output.accept(RevampedBlocks.WARPED_MOSAIC_STAIRS.get());

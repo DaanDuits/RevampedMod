@@ -3,6 +3,8 @@
   "block.revamped.chopping_block": "Chopping Block",
   "container.revamped.chopping_block": "Chopping Block",
 
+  "block.revamped.hollow_oak_log": "Hollow Oak Log",
+  "block.revamped.stripped_hollow_oak_log": "Stripped Hollow Oak Log",
   "block.revamped.chiseled_oak_wood": "Chiseled Oak Wood",
   "block.revamped.oak_mosaic": "Oak Mosaic",
   "block.revamped.oak_mosaic_stairs": "Oak Mosaic Stairs",
@@ -10,7 +12,9 @@
   "block.revamped.oak_tiles": "Oak Tiles",
   "block.revamped.oak_tile_stairs": "Oak Tile Stairs",
   "block.revamped.oak_tile_slab": "Oak Tile Slab",
-  
+
+  "block.revamped.hollow_birch_log": "Hollow Birch Log",
+  "block.revamped.stripped_hollow_birch_log": "Stripped Hollow Birch Log",
   "block.revamped.chiseled_birch_wood": "Chiseled Birch Wood",
   "block.revamped.birch_mosaic": "Birch Mosaic",
   "block.revamped.birch_mosaic_stairs": "Birch Mosaic Stairs",
@@ -19,6 +23,8 @@
   "block.revamped.birch_tile_stairs": "Birch Tile Stairs",
   "block.revamped.birch_tile_slab": "Birch Tile Slab",
 
+  "block.revamped.hollow_spruce_log": "Hollow Spruce Log",
+  "block.revamped.stripped_hollow_spruce_log": "Stripped Hollow Spruce Log",
   "block.revamped.chiseled_spruce_wood": "Chiseled Spruce Wood",
   "block.revamped.spruce_mosaic": "Spruce Mosaic",
   "block.revamped.spruce_mosaic_stairs": "Spruce Mosaic Stairs",
@@ -27,6 +33,8 @@
   "block.revamped.spruce_tile_stairs": "Spruce Tile Stairs",
   "block.revamped.spruce_tile_slab": "Spruce Tile Slab",
 
+  "block.revamped.hollow_jungle_log": "Hollow Jungle Log",
+  "block.revamped.stripped_hollow_jungle_log": "Stripped Hollow Jungle Log",
   "block.revamped.chiseled_jungle_wood": "Chiseled Jungle Wood",
   "block.revamped.jungle_mosaic": "Jungle Mosaic",
   "block.revamped.jungle_mosaic_stairs": "Jungle Mosaic Stairs",
@@ -35,6 +43,8 @@
   "block.revamped.jungle_tile_stairs": "Jungle Tile Stairs",
   "block.revamped.jungle_tile_slab": "Jungle Tile Slab",
 
+  "block.revamped.hollow_acacia_log": "Hollow Acacia Log",
+  "block.revamped.stripped_hollow_acacia_log": "Stripped Hollow Acacia Log",
   "block.revamped.chiseled_acacia_wood": "Chiseled Acacia Wood",
   "block.revamped.acacia_mosaic": "Acacia Mosaic",
   "block.revamped.acacia_mosaic_stairs": "Acacia Mosaic Stairs",
@@ -43,6 +53,8 @@
   "block.revamped.acacia_tile_stairs": "Acacia Tile Stairs",
   "block.revamped.acacia_tile_slab": "Acacia Tile Slab",
 
+  "block.revamped.hollow_dark_oak_log": "Hollow Dark Oak Log",
+  "block.revamped.stripped_hollow_dark_oak_log": "Stripped Hollow Dark Oak Log",
   "block.revamped.chiseled_dark_oak_wood": "Chiseled Dark Oak Wood",
   "block.revamped.dark_oak_mosaic": "Dark Oak Mosaic",
   "block.revamped.dark_oak_mosaic_stairs": "Dark Oak Mosaic Stairs",
@@ -51,6 +63,8 @@
   "block.revamped.dark_oak_tile_stairs": "Dark Oak Tile Stairs",
   "block.revamped.dark_oak_tile_slab": "Dark Oak Tile Slab",
 
+  "block.revamped.hollow_mangrove_log": "Hollow Mangrove Log",
+  "block.revamped.stripped_hollow_mangrove_log": "Stripped Hollow Mangrove Log",
   "block.revamped.chiseled_mangrove_wood": "Chiseled Mangrove Wood",
   "block.revamped.mangrove_mosaic": "Mangrove Mosaic",
   "block.revamped.mangrove_mosaic_stairs": "Mangrove Mosaic Stairs",
@@ -59,6 +73,8 @@
   "block.revamped.mangrove_tile_stairs": "Mangrove Tile Stairs",
   "block.revamped.mangrove_tile_slab": "Mangrove Tile Slab",
 
+  "block.revamped.hollow_cherry_log": "Hollow Cherry Log",
+  "block.revamped.stripped_hollow_cherry_log": "Stripped Hollow Cherry Log",
   "block.revamped.chiseled_cherry_wood": "Chiseled Cherry Wood",
   "block.revamped.cherry_mosaic": "Cherry Mosaic",
   "block.revamped.cherry_mosaic_stairs": "Cherry Mosaic Stairs",
@@ -72,6 +88,8 @@
    "block.revamped.bamboo_tile_stairs": "Bamboo Tile Stairs",
    "block.revamped.bamboo_tile_slab": "Bamboo Tile Slab",
 
+  "block.revamped.hollow_crimson_stem": "Hollow Crimson Stem",
+  "block.revamped.stripped_hollow_crimson_stem": "Stripped Hollow Crimson Stem",
   "block.revamped.chiseled_crimson_hyphae": "Chiseled Crimson Hyphae",
   "block.revamped.crimson_mosaic": "Crimson Mosaic",
   "block.revamped.crimson_mosaic_stairs": "Crimson Mosaic Stairs",
@@ -80,6 +98,8 @@
   "block.revamped.crimson_tile_stairs": "Crimson Tile Stairs",
   "block.revamped.crimson_tile_slab": "Crimson Tile Slab",
 
+  "block.revamped.hollow_warped_stem": "Hollow Warped Stem",
+  "block.revamped.stripped_hollow_warped_stem": "Stripped Hollow Warped Stem",
   "block.revamped.chiseled_warped_hyphae": "Chiseled Warped Hyphae",
   "block.revamped.warped_mosaic": "Warped Mosaic",
   "block.revamped.warped_mosaic_stairs": "Warped Mosaic Stairs",
@@ -89,6 +109,8 @@
   "block.revamped.warped_tile_slab": "Warped Tile Slab",
   
   "entity.minecraft.villager.revamped.lumberjack": "Lumberjack",
+
+  "message.revamped.must_hit_hollow_log_end": "You can only enter log from an open end",
 
   "revamped.configuration.title": "Revamped Configs",
   "revamped.configuration.section.revamped.common.toml": "Revamped Configs",

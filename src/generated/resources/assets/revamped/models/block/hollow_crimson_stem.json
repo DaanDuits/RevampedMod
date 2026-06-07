@@ -1,0 +1,8 @@
+{
+  "parent": "revamped:block/hollow_log",
+  "textures": {
+    "end": "revamped:block/hollow_crimson_stem_top",
+    "inside": "minecraft:block/stripped_crimson_stem",
+    "side": "minecraft:block/crimson_stem"
+  }
+}

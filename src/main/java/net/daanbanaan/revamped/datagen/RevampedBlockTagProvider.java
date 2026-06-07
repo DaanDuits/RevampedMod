@@ -98,6 +98,30 @@ public class RevampedBlockTagProvider extends BlockTagsProvider {
 			RevampedBlocks.BAMBOO_TILE_SLAB.get(),
 			RevampedBlocks.CRIMSON_TILE_SLAB.get(),
 			RevampedBlocks.WARPED_TILE_SLAB.get());
+
+		tag(RevampedBlockTags.HOLLOW_LOGS)
+		.add(RevampedBlocks.HOLLOW_OAK_LOG.get(),
+			RevampedBlocks.HOLLOW_BIRCH_LOG.get(),
+			RevampedBlocks.HOLLOW_SPRUCE_LOG.get(),
+			RevampedBlocks.HOLLOW_JUNGLE_LOG.get(),
+			RevampedBlocks.HOLLOW_ACACIA_LOG.get(),
+			RevampedBlocks.HOLLOW_DARK_OAK_LOG.get(),
+			RevampedBlocks.HOLLOW_MANGROVE_LOG.get(),
+			RevampedBlocks.HOLLOW_CHERRY_LOG.get(),
+			RevampedBlocks.HOLLOW_CRIMSON_STEM.get(),
+			RevampedBlocks.HOLLOW_WARPED_STEM.get());
+
+		tag(RevampedBlockTags.STRIPPED_HOLLOW_LOGS)
+			.add(RevampedBlocks.STRIPPED_HOLLOW_OAK_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_BIRCH_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_SPRUCE_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_JUNGLE_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_ACACIA_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_DARK_OAK_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_MANGROVE_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_CHERRY_LOG.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_CRIMSON_STEM.get(),
+			RevampedBlocks.STRIPPED_HOLLOW_WARPED_STEM.get());
 		
 		tag(RevampedBlockTags.TRADEABLE_LOGS)
 		.add(Blocks.OAK_LOG,
@@ -112,7 +136,8 @@ public class RevampedBlockTagProvider extends BlockTagsProvider {
 		
 		tag(BlockTags.MINEABLE_WITH_AXE).add(RevampedBlocks.CHOPPING_BLOCK.get())
 		.addTags(RevampedBlockTags.WOODEN_MOSAIC, RevampedBlockTags.WOODEN_MOSAIC_STAIRS, RevampedBlockTags.WOODEN_MOSAIC_SLABS,
-				RevampedBlockTags.WOODEN_TILES, RevampedBlockTags.WOODEN_TILE_STAIRS, RevampedBlockTags.WOODEN_TILE_SLABS);
+			RevampedBlockTags.WOODEN_TILES, RevampedBlockTags.WOODEN_TILE_STAIRS, RevampedBlockTags.WOODEN_TILE_SLABS,
+			RevampedBlockTags.HOLLOW_LOGS, RevampedBlockTags.STRIPPED_HOLLOW_LOGS);
 	}
 
 }
