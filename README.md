@@ -5,6 +5,8 @@
 ## Features
 ### Chopping Block
 The Chopping Block is a new functional block to make crafting wood blocks easier and less expensive.
+### Hollow Log
+The Hollow Log is a new functional and decorational block for a quick and easy way to hide from mobs or enter a tunnel.
 ### Wooden Mosaic
 A new set of decorative blocks of every wood type that adds consistency between bamboo and wood.
 ### Wooden Tiles
