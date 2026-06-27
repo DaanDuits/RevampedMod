@@ -41,6 +41,7 @@ public class DataGenerators {
 		generator.addProvider(event.includeClient(), new RevampedItemModelProvider(packOutput, existingFileHelper));
 		generator.addProvider(event.includeClient(), new RevampedBlockStateProvider(packOutput, existingFileHelper));
 
+		generator.addProvider(event.includeServer(), new RevampedDataPackProvider(packOutput, lookupProvider));
 		generator.addProvider(event.includeServer(), new RevampedDataMapProvider(packOutput, lookupProvider));
 	}
 }
